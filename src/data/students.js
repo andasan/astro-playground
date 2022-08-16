@@ -17,11 +17,11 @@ export const students = [
     {name: 'naoki', title: "Japan Ranks 1st in the World in Six Surprising Matters", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/021.png", status: true},
     {name: 'naoto', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'raizo', title: "Protein", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/033.png", status: true},
-    {name: 'reina', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
+    {name: 'reina', title: "The 5 Most Popular Liquors In The World", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b9b4832040ab1dec8e1b8a0/iPhone/020.png", status: true},
     {name: 'ryo', title: "Tips for Better Sleep", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/019.png", status: true},
     {name: 'ryousuke', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'samuel', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'tadeu', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'yuriko', title: "Dogs trivia", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b9b4832040ab1dec8e1b8a0/iPhone/006.png", status: true},
-    {name: 'yuya', title: "Liverpool Football Club", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5ba47598040ab16e95045b09/iPhone/030.png", status: true},
+    {name: 'yuya', title: "Liverpool Football Club", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5ba47598040ab16e95045b09/iPhone/030.png", status: true}
 ]
