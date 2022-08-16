@@ -1,0 +1,359 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="Jumpei - Infographic Mini Project" bgcolor="bg-white">
+    <div id="body-secondary">
+        <header id="header">
+            <h1><a href="youkai.html">妖怪</a></h1>
+            <p>―――― youkai ――――</p>
+        </header>
+
+        <main>
+            <section class="youkai-toha">
+                <div class="youkai-img"></div>
+                <div class="youkai-info">
+                    <h1>―― youkai ――</h1>
+                    <p>The concept of yōkai, their causes and phenomena related to them varies greatly throughout
+                        Japanese culture and historical periods; typically, the older the time period, the higher the
+                        number of phenomena deemed to be supernatural and the result of yōkai.[4] According to Japanese
+                        ideas of animism, spirit-like entities were believed to reside in all things, including natural
+                        phenomena and objects.[5] Such spirits possessed emotions and personalities: peaceful spirits
+                        were known as nigi-mitama, who brought good fortune; violent spirits, known as ara-mitama,
+                        brought ill fortune, such as illness and natural disasters. Neither type of spirit was
+                        considered to be yōkai.</p>
+                </div>
+            </section>
+        </main>
+
+        <h1 id="iwatani"></h1>
+
+        <div class="youkai-process">
+            <h1 class="process-title">―――――――――――――――――</h1>
+            <h1 class="process-title">process of being youkai</h1>
+            <h1 class="process-title">――――――――――――――――――</h1>
+
+            <div class="process-container">
+
+                <div class="process-picture" id="process1">
+                    <h2>&lt;罪&gt;</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio commodi itaque, cum facere
+                        tempora blanditiis, maiores eaque tenetur nostrum fugiat placeat repudiandae minus, consequatur
+                        a. Sapiente corrupti eveniet cumque!</p>
+                </div>
+
+                <div class="process-picture" id="process2">
+                    <h2>&lt;恨み&gt;</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio commodi itaque, cum facere
+                        tempora blanditiis, maiores eaque tenetur nostrum fugiat placeat repudiandae minus, consequatur
+                        a. Sapiente corrupti eveniet cumque!</p>
+                </div>
+                <div class="process-picture" id="process3">
+                    <h2>&lt;物の怪&gt;</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio commodi itaque, cum facere
+                        tempora blanditiis, maiores eaque tenetur nostrum fugiat placeat repudiandae minus, consequatur
+                        a. Sapiente corrupti eveniet cumque!</p>
+                </div>
+                <div class="process-picture" id="process4">
+                    <h2>&lt;妖怪&gt;</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio commodi itaque, cum facere
+                        tempora blanditiis, maiores eaque tenetur nostrum fugiat placeat repudiandae minus, consequatur
+                        a. Sapiente corrupti eveniet cumque!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="iwatani1"></div>
+
+        <div class="dis">
+            <h1 class="dis-title">―――――――――――――――</h1>
+            <h1 class="dis-title">distribution of youkai</h1>
+            <h1 class="dis-title">―――――――――――――――</h1>
+
+
+            <!-- <div class="dis-map">
+                <img src="https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/map.png"alt="">
+            </div> -->
+            <div class="dis-info">asssssssssssssssssssssssssssssssssssssssssssdf</div>
+
+            <div class="rectangle2">
+                <img src="https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/rec.png">
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    @font-face {
+        font-family: "wahu";
+        src: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/fonts/wahu.otf") format("opentype");
+    }
+
+    #body-secondary {
+        width: 100%;
+        font-size: 8px;
+        font-family: "wahu";
+        background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/washi.jpg");
+    }
+
+    #header {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+
+
+    #header a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 15rem;
+    }
+
+    #header p {
+        font-size: 3em;
+    }
+
+    .youkai-toha {
+        margin-top: 70px;
+        width: 100%;
+
+    }
+
+    .youkai-img {
+        position: absolute;
+        background-position: center;
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/emaki.jpg");
+    }
+
+    .youkai-info {
+        position: absolute;
+        background-color: rgb(250, 250, 250, 0);
+        width: 100%;
+        height: 400px;
+        opacity: 0;
+        transition: all .3s;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .youkai-info h1 {
+        padding-bottom: 30px;
+        font-size: 4em;
+    }
+
+    .youkai-info p {
+        font-size: 3em;
+    }
+
+    .youkai-info:hover {
+        position: absolute;
+        background-color: rgb(6, 6, 6, 0.7);
+        width: 100%;
+        height: 400px;
+        opacity: 1;
+        color: white;
+
+    }
+
+    #iwatani {
+        margin-top: 600px;
+
+    }
+
+    .youkai-process {
+        padding-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .process-title {
+        text-align: center;
+        font-size: 5em;
+        overflow: hidden;
+    }
+
+    .process-container {
+        /* margin-top: 300px;
+        padding-top: 300px; */
+    }
+
+    .process-picture {
+        display: block;
+        background-repeat: no-repeat;
+        color: white;
+
+    }
+
+    .process-picture h2 {
+
+        font-size: 4em;
+    }
+
+    .process-picture p {
+        padding-top: 2em;
+        font-size: 3em;
+    }
+
+    #process1 {
+        background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/process1.png");
+        position: relative;
+        background-color: rgb(99, 30, 71);
+        margin-top: 6rem;
+        margin-right: 10rem;
+        height: 300px;
+        background-position: left;
+        background-size: contain;
+    }
+
+
+    #process1 p {
+        padding-left: 30rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+
+    #process1 h2 {
+        padding-left: 60%;
+        padding-top: 2rem;
+    }
+
+    #process2 {
+        background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/process2.png");
+        background-color: rgb(147, 108, 41);
+        margin-top: 60px;
+        margin-left: 20rem;
+        height: 300px;
+        background-position: 110%;
+        background-size: contain;
+    }
+
+    #process2 p {
+        padding-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 30rem;
+    }
+
+    #process2 h2 {
+        padding-left: 40%;
+        padding-top: 20px;
+    }
+
+    #process3 {
+        background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/process3.png");
+        background-color: rgb(15, 48, 71);
+        margin-top: 80px;
+        margin-right: 100px;
+        height: 300px;
+        background-position: left;
+    }
+
+    #process3 p {
+        padding-left: 30rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+
+    #process3 h2 {
+        padding-left: 60%;
+        padding-top: 2rem;
+    }
+
+    #process4 {
+        background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/process4.png");
+        background-color: rgb(111, 17, 17);
+        margin-top: 80px;
+        margin-left: 20rem;
+        height: 300px;
+        background-position: right;
+    }
+
+    #process4 p {
+        padding-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 17rem;
+    }
+
+    #process4 h2 {
+        padding-left: 40%;
+        padding-top: 20px;
+    }
+
+    #iwatani1 {
+        padding-top: 150px;
+        display: block;
+    }
+
+    .dis {
+        height: 1000px;
+        width: 100%;
+        position: relative;
+    }
+
+    .dis-title {
+        font-size: 5rem;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .dis-container {
+        margin-top: 200px;
+    }
+
+    .dis-map {
+        overflow: hidden;
+        position: absolute;
+        height: 1000px;
+        display: block;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+
+    .dis-info {
+        overflow: hidden;
+        background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/map.png");
+        width: 500px;
+        height: 500px;
+        position: relative;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+
+    .rectangle2 img {
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        width: 25%;
+        height: 200px;
+        transform: translateX(-50%);
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+        #process1 {
+            background-image: url("https://raw.githubusercontent.com/junkun0129/miniproject/main/youkai/process1.png");
+            background-position: top;
+            background-size: 70% 50%;
+            position: relative;
+            background-color: rgb(99, 30, 71);
+            margin-top: 7rem;
+            margin-right: 0rem;
+            height: 60rem;
+        }
+
+        #process1 h2 {
+            padding-top: 40rem;
+            padding-left: 10%;
+            float: left;
+        }
+
+        #process1 p {
+            padding-top: 33rem;
+        }
+    }
+</style>

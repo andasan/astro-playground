@@ -11,7 +11,7 @@ export const students = [
     {name: 'iyo', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'jc', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'juan', title: "The greatest man on earth, Hidetaka Miyazaki", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/004.png", status: true},
-    {name: 'jumpei', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
+    {name: 'jumpei', title: "Youkai", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5ba47598040ab16e95045b09/iPhone/009.png", status: true},
     {name: 'gale', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'mateus', title: "Which color are you in Magic the Gathering?", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5ba47598040ab16e95045b09/iPhone/001.png", status: true},
     {name: 'naoki', title: "Japan Ranks 1st in the World in Six Surprising Matters", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/021.png", status: true},
