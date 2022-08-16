@@ -1,0 +1,220 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="Isaac - Infographic Mini Project">
+    <header>
+        <div class="topic">
+            <h1>Some Tips About breath Holding</h1>
+            <p>A better way to hold your breath longer. Useless on land though.</p>
+            <div id="image0">
+                <img src="https://raw.githubusercontent.com/shocker945516/exercise_infographic_website/main/img/2d4ssa.jpg" alt="holding_breath" />
+            </div>
+        </div>
+    </header>
+    <div class="how">
+        <h2>Steps</h2>
+    </div>
+    <section id="step1" class="step">
+        <div class="container">
+            <div id="text1" class="text">
+                <h4>STEP 1. Relaxation Phase</h4>
+                <p>
+                    Use your belly and chest. Imagine your body is a container, let the
+                    air fills the belly first, then the chest. Breath slowly and focus
+                    on relaxation.
+                </p>
+            </div>
+            <div id="image1" class="image">
+                <img src="https://raw.githubusercontent.com/shocker945516/exercise_infographic_website/main/img/sit-back-and-a57daf87da.jpg" alt="relax" />
+            </div>
+        </div>
+    </section>
+    <section id="step2" class="step">
+        <div class="container">
+            <div id="text2" class="text">
+                <h4>STEP 2. One Full Breath</h4>
+                <p>
+                    Once you feel you're ready, follow the breathing method mentioned in
+                    step one and hold your breath. Don't forget to shut your mouth, too.
+                </p>
+            </div>
+            <div id="image2" class="image">
+                <img src="https://raw.githubusercontent.com/shocker945516/exercise_infographic_website/main/img/24eq2l.jpg" alt="heart_attack" />
+            </div>
+        </div>
+    </section>
+    <section id="step3" class="step">
+        <div class="container">
+            <div id="text3" class="text">
+                <h4>STEP 3. Breath-Hold</h4>
+                <p>
+                    High heart rates causes the air consumption faster, so stay relaxed
+                    as you can. You will feel difficult to continue by the time, that's
+                    because the CO2 is building up in your body, but you won't die of
+                    this. Try not let it interrupt your relaxation.
+                </p>
+            </div>
+            <div id="image3" class="image">
+                <img src="https://raw.githubusercontent.com/shocker945516/exercise_infographic_website/main/img/e07.jpg" alt="bear" />
+            </div>
+        </div>
+    </section>
+    <section id="step4" class="step">
+        <div class="container">
+            <div id="text4" class="text">
+                <h4>STEP 4. Recovery Breathing</h4>
+                <p>
+                    After finishing breath holding, inhale once and hold your breath
+                    again. When you feel you need to exhale, just let the air go. Repeat
+                    it at least 3 times.
+                </p>
+            </div>
+            <div id="image4" class="image">
+                <img src="https://raw.githubusercontent.com/shocker945516/exercise_infographic_website/main/img/Screenshot 2022-08-12 15.12.38.png" alt="iron_man" />
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</Layout>
+
+<style>
+    header {
+        background-color: #1d3557;
+        width: 100%;
+    }
+
+    .topic {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    #image0 {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 350px;
+    }
+
+    .topic img {
+        width: 100%;
+    }
+
+    .how {
+        background-color: #e63946;
+        text-align: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .text {
+        display: inline-block;
+        width: 250px;
+    }
+
+    .container {
+        width: 60%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .step:nth-of-type(even) .image {
+        order: 1;
+    }
+
+    .step:nth-of-type(even) .text {
+        order: 2;
+    }
+
+    .image {
+        width: 300px;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #step1 {
+        background-color: #457b9d;
+    }
+
+    #text1 {}
+
+    #image1 {}
+
+    #step2 {
+        background-color: #a8dadc;
+        color: #1d3557;
+    }
+
+    #text2 {}
+
+    #image2 {}
+
+    #step3 {
+        background-color: #f1faee;
+        color: #1d3557;
+    }
+
+    #text3 {}
+
+    #image3 {}
+
+    #step4 {
+        background-color: #457b9d;
+    }
+
+    #text4 {}
+
+    #image4 {}
+
+    @media only screen and (max-width: 500px) {
+        .container {
+            display: block;
+            width: 100%;
+            padding: 25px;
+        }
+
+        .text {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .image {
+            width: 100%;
+            display: block;
+            margin-top: 20px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        #text1 {}
+
+        #image1 {}
+
+        #text2 {}
+
+        #image2 {}
+
+        #text3 {}
+
+        #image3 {}
+
+        #text4 {}
+
+        #image4 {}
+    }
+</style>

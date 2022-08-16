@@ -12,7 +12,7 @@
     // Astro will directly run your TypeScript code, no transpilation needed.
     "noEmit": true,
     // Enable strict type checking.
-    "strict": true,
+    "strict": false,
     // Error when a value import is only used as a type.
     "importsNotUsedAsValues": "error"
   }
