@@ -1,0 +1,264 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="A0522 - Infographic Mini Project" bgcolor="bg-[#909090]">
+    <header>
+        <div class="container">
+            <h1 id="header-logo">Protein</h1>
+        </div>
+
+        <div class="showcase">
+            <h1>What's <span>PROTEIN?</span></h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam ipsa at molestiae.
+                Debitis voluptate ullam impedit laboriosam tempora tenetur dolore velit doloribus ad! Minima molestiae
+                dignissimos praesentium sit officia?</p>
+        </div>
+    </header>
+
+    <section class="benefits">
+        <h1><span id="top8">TOP 8</span> Benefits of Protein</h1>
+        <div class="top-box">
+            <div class="benefit-item">
+                <img src="image/muscle.png" alt="muscle">
+                <span>1</span>
+                <p>Boost Muscle Mass</p>
+            </div>
+            <div class="benefit-item">
+                <img src="image/weighing-scale.png" alt="weight scale">
+                <span>2</span>
+                <p>Improve Fat Burning</p>
+            </div>
+            <div class="benefit-item">
+                <img src="image/bone.png" alt="bone">
+                <span>3</span>
+                <p>Help Maintain Strong Bones</p>
+            </div>
+            <div class="benefit-item">
+                <img src="image/star.png" alt="smile">
+                <span>4</span>
+                <p>Improve Your Mood</p>
+            </div>
+        </div>
+
+        <div class="bottom-box">
+            <div class="benefit-item">
+                <img src="image/glucose-meter.png" alt="glucose-meter">
+                <span>5</span>
+                <p>Stabilizes Blood Sugar Levels</p>
+            </div>
+            <div class="benefit-item">
+                <img src="image/anti-aging.png" alt="anti-aging">
+                <span>6</span>
+                <p>Slow Aging & Promote Longevity</p>
+            </div>
+            <div class="benefit-item">
+                <img src="image/heart.png" alt="heart">
+                <span>7</span>
+                <p>Protect Heart Health</p>
+            </div>
+            <div class="benefit-item">
+                <img src="image/self-improvement.png" alt="improvement">
+                <span>8</span>
+                <p>Improve learning and memory</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Howmuch">
+
+    </section>
+
+    <section class="10foods">
+        <div id="beans">
+            <img src="" alt="">
+            <p></p>
+        </div>
+        <div id="meat">
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Protein &copy; 2022, All RIghts Reserved</p>
+    </footer>
+</Layout>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Main Styling */
+    html,
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7em;
+    }
+
+    /* Header */
+    .container {
+        background-color: rgb(190, 183, 185);
+    }
+
+    #header-logo {
+        text-align: center;
+        padding: 20px;
+        font-family: 'DynaPuff', cursive, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .showcase {
+        padding: 40px 80px;
+        background: url(../image/pexels-anush-gorak-1229356.jpg) no-repeat center center/cover;
+        height: 100%;
+
+    }
+
+    .showcase h1 {
+        padding: 20px;
+        color: white;
+        font-family: 'DynaPuff', cursive, sans-serif;
+    }
+
+    .showcase p {
+        padding: 10px;
+        color: antiquewhite;
+    }
+
+
+    /* max-width: 700px */
+    @media only screen and (max-width: 700px) {
+
+        /* Benefit */
+        .benefits h1 {
+            text-align: center;
+            white-space: nowrap;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 20px 10px;
+            background-color: #fff100;
+            font-family: 'DynaPuff', cursive, sans-serif;
+        }
+
+        #top8 {
+            color: red;
+        }
+
+        .top-box,
+        .bottom-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 60px;
+            flex-wrap: wrap;
+        }
+
+        .benefit-item {
+            position: relative;
+            width: 45%;
+            text-align: center;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .benefit-item img {
+            width: 90%;
+            border-radius: 35%;
+        }
+
+        .benefit-item span {
+            position: absolute;
+            top: 0%;
+            left: -30%;
+            font-weight: bold;
+            font-size: 2rem;
+            color: rgb(255, 25, 0);
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            border: solid 3px skyblue;
+        }
+
+        .benefit-item p {
+            margin: 10px auto;
+            text-align: center;
+        }
+    }
+
+    /* min-width: 701px - max-width: 1200px */
+    @media screen and (min-width: 701px) {
+
+        /* Benefit */
+        .benefits {
+            padding: 0 100px;
+        }
+
+        .benefits h1 {
+            text-align: center;
+            padding: 20px 40px;
+            margin: 50px 150px 40px;
+            background-color: #fff100;
+            font-family: 'DynaPuff', cursive, sans-serif;
+        }
+
+        #top8 {
+            color: red;
+        }
+
+        .top-box,
+        .bottom-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 60px 0 20px;
+        }
+
+        .benefit-item {
+            position: relative;
+            width: 45%;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .benefit-item img {
+            width: 90%;
+            border-radius: 35%;
+            display: inline-block;
+        }
+
+        .benefit-item span {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            font-weight: bold;
+            font-size: 2rem;
+            color: rgb(255, 25, 0);
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            /* background-color: aqua; */
+            text-align: center;
+            line-height: 40px;
+            border: solid 3px skyblue;
+        }
+
+        .benefit-item p {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+
+    /* Footer */
+    footer {
+        background: rgb(190, 183, 185);
+        text-align: center;
+        padding: 20px;
+    }
+</style>

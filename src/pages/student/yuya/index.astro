@@ -1,0 +1,253 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="A0522 - Infographic Mini Project" bgcolor="bg-black">
+    <div id="body-secondary">
+        <header >
+            
+           <h1> Liverpool Football Club</h1>
+        </header>
+    
+        <section>
+            <div class="page-container">
+                <div class="whatis">
+                    <img src="https://raw.githubusercontent.com/tayu78/CICCC/main/Web-I/infographics/images/fans-stand.webp" alt="fans-stand">
+                    <div>
+                        <p>English professional football(soccer) club based in Liverpool,UK.<br>
+                            It it the most successfull English team in European footbball tournament history, having won six
+                            European Cup/Chanpiones League trophies.<br>
+                            The club has also won the English top division league title 19 titles.
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </section>
+    
+        <section class="competitions">
+            <div class="page-container">
+                <h2>Competitions</h2>
+            <div class="competitions-container">
+                <div class="competitions-item">
+                    <h3>Premier League</h3>
+                    <p>Top level of the English football league. Contested by 20 Clubs, it operates on a system of promotion and relegation with the English Football League(division 2). 
+                    The top 4 team qualify for UEFA Champions League
+                    The most-watched sports league in the World. </p>
+                </div>
+                <div class="competitions-item" >
+                    <h3>UEFA Champions League</h3>
+                    <p>
+                        Annual club football competition organized by UEFA and contested by top-division European clubs.<br>
+                        It is one of the prestigious football tournaments in the world played by the national league champions (and for some nations , one or more runners-up) of their national association
+                    </p>
+                </div>
+                <div class="competitions-item">
+                    <h3>FA Cup</h3>
+                    <p>Annual knockout football competition in men's domestic English Football.<br>
+                        First played during the 1871-1872 season,it is the oldest national football competition in the world.
+    
+                    </p>
+                </div>
+                <div class="competitions-item" >
+                    <h3>Carabao Cup</h3>
+                    <p>an annual knockout football competition and major trophy in men's domestic English football. Organised by the English Football League (EFL), it is open to any club within the top four levels of the English football league system – 92 clubs in total – comprising the top level Premier League, and the three divisions of the English Football League's own league competition (Championship, League One and League Two).</p>
+                </div>
+            </div>
+    
+            </div>
+            
+        </section>
+    
+        <section>
+            <div class="page-container">
+                <h2>Attractive Points</h2>
+            <div class="attractive-points-container">
+                <img src="https://raw.githubusercontent.com/tayu78/CICCC/main/Web-I/infographics/images/red-fans.jpeg" alt="fans-red" >
+                <div>
+                    <h3><span class="text-primary">Enthusiastic </span>Supporters</h3>
+                    <p>Liverpool fans are known as enthusiastic. The atmosphere in the stadium is exceptional, and many opposing team players and managers have stated that it is the hardest stadium they have ever played in.<br>
+                     The loss rate is low when playing at home, and from April 2017 to January 2021 there were no losses in 68 home games in the Premier League.
+                    </p>
+                </div>
+            </div>
+            <div class="attractive-points-container">
+                <div>
+                    <h3><span class="text-primary">Aggressive</span> Football</h3>
+                    <p> Using "Gegenpressing" which is a tactic whereby a team, having lost possession, immediately attempts to win it back. Whereas most teams would opt to fall back into place once surrendering possession, they essentially counter the counter-attack.</p>
+                </div>
+                <img src="https://raw.githubusercontent.com/tayu78/CICCC/main/Web-I/infographics/images/gegen.jpeg" alt="gegenpressing">
+            </div>
+    
+           
+                <div class="attractive-points-container">
+                    <img src="https://raw.githubusercontent.com/tayu78/CICCC/main/Web-I/infographics/images/liv-bar.jpeg" alt="liverpool-barcelona">
+                    <div>
+                        <h3><span class="text-primary">Dramatic</span> Match</h3>
+                        <p>They have a bunch of dramatic games. It cannot be described all, but lets see  one of the match.<br>
+                            Liverpool played Barcelona, one of the biggest team in the world , in the Champions League semifinals in the 19-20 season.
+                            Semifinals decides the winner through  double-legged knockout format(Home-Away).<br>
+                            Liverpool lost away first-leg match ,conceded 3 goals which means they need to win score 4 goal and crean-sheet.
+                            Make matters worse, Salah and Firmino who are the core player of Liverpool were injured before the home second-leg match.
+                            But they made it! and win the Champions League.
+                        </p>
+                    </div>
+                  
+                 </div>
+           
+            </div>
+        </section>
+    </div>
+</Layout>
+
+<style>
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#body-secondary{
+    background: black;
+    color: #fff;
+}
+
+header {
+    
+    background-image: url("https://raw.githubusercontent.com/tayu78/CICCC/main/Web-I/infographics/images/flag.jpeg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+}
+
+@media only screen and (max-width:576px) {
+    header{
+        background-position: 65% 50%;
+    }
+    
+}
+
+
+
+.page-container{
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-primary{
+    color: rgb(251, 91, 91);
+}
+
+/* what is Liverpool */
+.whatis{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatis div{
+    padding: 3rem;
+}
+
+.whatis img{
+   height: 10rem;
+}
+
+@media only screen and (max-width:768px) {
+    .whatis img{
+       display:none;
+    }
+}
+@media only screen and (max-width:576px) {
+    .whatis div{
+        padding:1rem 0;
+    }
+    
+}
+
+
+/* competiotions */
+.competitions{
+    color: black;
+}
+.competitions h2{
+    color: #fff;
+}
+.competitions h3{
+   margin-bottom: 1rem;
+}
+.competitions-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 3rem;
+}
+
+.competitions-item{
+    flex: 1 0 25rem;
+    padding: 3rem;
+    background: #fff;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:576px) {
+    .competitions-item{
+        flex: 1 0 10rem;
+        padding: 2rem;
+    }
+}
+
+
+
+/* attractive-points */
+.attractive-points-container{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.attractive-points-container img{
+    width: 45%;
+    /* max-width: 50rem; */
+}
+
+.attractive-points-container div{
+    width: 50%;
+}
+
+.attractive-points-container h3{
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+   
+    .attractive-points-container{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .attractive-points-container:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    
+    .attractive-points-container img{
+        width: 100%;
+    }
+    
+    .attractive-points-container div{
+        width: 100%;
+    }
+
+}
+
+
+
+
+</style>

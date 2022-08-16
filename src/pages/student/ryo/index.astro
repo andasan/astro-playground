@@ -1,0 +1,341 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="A0522 - Infographic Mini Project">
+<div id="body-secondary">
+    <main>
+        <div class="tips-block day">
+            <h2>Prepare for sleep during the day</h2>
+            <p class="lead">
+                The elements of a good night's sleep start long before you go to bed.
+                For a more refreshing rest, try to adopt some of these healthy sleep
+                habits <b>during the day</b>.
+            </p>
+            <div class="items">
+                <dl class="item-card schedule">
+                    <dt>Stick to a Sleep Schedule</dt>
+                    <dd>
+                        Go to sleep and wake up at the same time every day. This
+                        reinforces your circadian rhythm to promote healthy sleep-wake
+                        cycles.
+                    </dd>
+                </dl>
+                <dl class="item-card pen">
+                    <dt>Write Down Your Worries</dt>
+                    <dd>
+                        Don't take stress to bed. Research shows that writing down your
+                        worries early in the day can help you fall asleep faster at
+                        bedtime.
+                    </dd>
+                </dl>
+                <dl class="item-card bed">
+                    <dt>Create a Healthy Sleep Environment</dt>
+                    <dd>
+                        Your room should be a relaxing. Creating a clean, cozy retreat for
+                        sleep may help your mind switch off more easily at night.
+                    </dd>
+                </dl>
+                <dl class="item-card alcohol">
+                    <dt>Avoid Stimulants & Limit Alcohol</dt>
+                    <dd>
+                        Caffeine should not be consumed four to six hours before bedtime.
+                        Limit alcohol as drinking in excess has been linked to poor sleep.
+                    </dd>
+                </dl>
+                <dl class="item-card exercise">
+                    <dt>Exercise & Get Outside</dt>
+                    <dd>
+                        30-minutes of moderate exercise and sunshine during the day makes
+                        it easier to sleep at night—and give you a serotonin boost too!
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="tips-block night">
+            <h2>Sleep more soundly at night</h2>
+            <p class="lead">
+                Want to wake up feeling refreshed? When you're ready to head to bed,
+                follow these tips to improve the quality and quantity of your
+                <b>sleep at night</b>.
+            </p>
+            <div class="items">
+                <dl class="item-card bed-time">
+                    <dt>Don't Head to Bed When You're Not Tired</dt>
+                    <dd>
+                        An early night might sound nice, but don't force sleep. Heading to
+                        bed before you're tired may lead to sleep anxiety and insomnia.
+                    </dd>
+                </dl>
+                <dl class="item-card wind-down">
+                    <dt>Create a Daily 'Wind-Down' Routine</dt>
+                    <dd>
+                        Hyperarousal (an active or 'busy' mind) is the main reason people
+                        with insomnia can't sleep. Make time to switch off before bed.
+                    </dd>
+                </dl>
+                <dl class="item-card no-light">
+                    <dt>Block Out Noise & Light</dt>
+                    <dd>
+                        A quiet and dark room is essential for a good night's sleep. Light
+                        exposure and noise can interfere with sleep quantity and quality.
+                    </dd>
+                </dl>
+                <dl class="item-card sleep-zone">
+                    <dt>Make Your Bed a Sleep & Intimacy Zone</dt>
+                    <dd>
+                        Leave work at your desk and meals in the kitchen. Your brain
+                        should only associate bed with sleep and intimate activities.
+                    </dd>
+                </dl>
+                <dl class="item-card no-phone">
+                    <dt>Don't Take Your Phone or Other Devices to Bed</dt>
+                    <dd>
+                        Unplug at night. Blue light delays the release of sleep-inducing
+                        melatonin, increases alertness, and sets back your internal sleep
+                        clock.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Content and design referenced from:
+        <a href="https://www.mindsethealth.com/matter/sleep-hygiene-tips">Mindset Health - Sleep Hygiene: 10 Tips for
+            Better Sleep</a>
+    </footer>
+</div>
+</Layout>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&display=swap");
+
+    b {
+        font-weight: bold;
+    }
+
+    #body-secondary {
+        background: linear-gradient(to right, #f7edd2, #102a43);
+    }
+
+    @media screen and (min-width: 768px) {
+        #body-secondary {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        main {
+            border-radius: 15px;
+            box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.3);
+            display: flex;
+            height: 95vh;
+            margin-top: 2%;
+            max-height: 815px;
+            max-width: 1250px;
+            overflow: scroll;
+            width: 90%;
+        }
+    }
+
+    .tips-block {
+        overflow-x: hidden;
+        padding: 1.5em;
+    }
+
+    @media screen and (min-width: 768px) {
+        .tips-block {
+            overflow-y: scroll;
+            padding: 2.5em 2em 2em;
+        }
+    }
+
+    .tips-block h2 {
+        font-size: 2.5rem;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .tips-block h2::before {
+        -webkit-animation: shake ease-in-out 1s infinite alternate;
+        animation: shake ease-in-out 1s infinite alternate;
+        content: "";
+        background: no-repeat center center/cover;
+        opacity: 0.6;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .tips-block .lead {
+        line-height: 1.2;
+        margin-top: 2em;
+    }
+
+    .tips-block .items {
+        margin-top: 2.4em;
+    }
+
+    .tips-block .item-card {
+        border-radius: 0.8em;
+        padding: 1em 1em;
+        position: relative;
+    }
+
+    .tips-block .item-card+.item-card {
+        margin-top: 1.5em;
+    }
+
+    .tips-block .item-card dt {
+        font-weight: bold;
+    }
+
+    .tips-block .item-card dd {
+        margin-top: 0.6em;
+        line-height: 1.3;
+    }
+
+    .tips-block .item-card::before {
+        background: no-repeat center center/70%;
+        background-color: #fff;
+        border-radius: 50%;
+        content: "";
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        width: 60px;
+    }
+
+    .tips-block .schedule::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/schedule.png);
+    }
+
+    .tips-block .pen::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/pen.png);
+    }
+
+    .tips-block .bed::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/bed.png);
+    }
+
+    .tips-block .alcohol::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/alcohol.png);
+    }
+
+    .tips-block .exercise::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/exercise.png);
+    }
+
+    .tips-block .bed-time::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/bed-time.png);
+    }
+
+    .tips-block .wind-down::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/wind-down.png);
+    }
+
+    .tips-block .no-light::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/no-light.png);
+    }
+
+    .tips-block .sleep-zone::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/sleep-zone.png);
+    }
+
+    .tips-block .no-phone::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/no-phone.png);
+    }
+
+    .tips-block.day {
+        background-color: #f7edd2;
+        padding-right: 3em;
+    }
+
+    @media screen and (min-width: 768px) {
+        .tips-block.day {
+            background-size: 150px;
+            padding-right: 3.5em;
+        }
+    }
+
+    .tips-block.day h2::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/sun.png);
+        left: -30px;
+        height: 120px;
+        top: -40px;
+        width: 120px;
+    }
+
+    .tips-block.day .item-card {
+        background: #f5e6bd;
+        padding-right: 3em;
+    }
+
+    .tips-block.day .item-card::before {
+        right: 0;
+        transform: translate(25px, -50%);
+    }
+
+    .tips-block.night {
+        background-color: #102a43;
+        color: #fff;
+        padding-left: 3em;
+    }
+
+    @media screen and (min-width: 768px) {
+        .tips-block.night {
+            padding-left: 3.5em;
+        }
+    }
+
+    .tips-block.night h2::before {
+        background-image: url(https://raw.githubusercontent.com/smtr0602/responsive-sleep-infographic/main/imgs/moon.png);
+        right: -30px;
+        height: 100px;
+        top: -30px;
+        width: 100px;
+    }
+
+    .tips-block.night .item-card {
+        background: #4d5b98;
+        padding-left: 3em;
+    }
+
+    .tips-block.night .item-card::before {
+        left: 0;
+        transform: translate(-25px, -50%);
+    }
+
+    footer {
+        padding: 1em;
+    }
+
+    footer a {
+        color: #fff;
+    }
+
+    @-webkit-keyframes shake {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(15deg);
+        }
+    }
+
+    @keyframes shake {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(15deg);
+        }
+    }
+
+    /*# sourceMappingURL=style.css.map */
+</style>

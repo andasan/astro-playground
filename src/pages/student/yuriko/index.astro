@@ -1,0 +1,547 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="A0522 - Infographic Mini Project" bgcolor="bg-white">
+    <div id="body-secondary">
+        <div class="header-container">
+            <h1 class="header">Dogs trivia</h1>
+            <p>Let's know about dogs more!</p>
+        </div>
+
+        <main class="body-container">
+
+            <section class="group1">
+                <article class="card">
+                    <h2 class="card-title">
+                        <span>360</span><br />
+                        dog breeds in the world
+                    </h2>
+                    <p class="contents">
+                        This is the oficiall and exclusive of newer mixd breeds. There are
+                        more dog breeds!
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">
+                        <span>42</span><br />teeth adult dogs have
+                    </h2>
+                    <p class="contents">
+                        Dogs also lose their fist teeth and around 5-8 months old, all the
+                        teeth become as permanent teeth.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">
+                        <span>300</span>million<br />receptors in dogs nose
+                    </h2>
+                    <p class="contents">
+                        Human has 5million receptors in their nose. That is why dogs are
+                        extremely good at smell out.
+                    </p>
+                </article>
+            </section>
+
+            <section class="group2">
+                <article class="card">
+                    <h2 class="card-title">Yawning Contagious</h2>
+                    <p class="contents">
+                        Dogs also catch a yawn from another even humans! If a yawn is from a
+                        persom a dog knows, it is four times as likely to happen.
+                    </p>
+                </article>
+
+
+                <div class="yawn-img"></div>
+
+                <div class="sleep-img"></div>
+
+                <div class="sleepy-dog-icon"></div>
+
+                <div class="sleep-dog-icon"></div>
+
+                <article class="card-dream">
+                    <h2 class="card-title">Dogs also see dreams</h2>
+                    <p class="contents-less">
+                        Puppies and senior dogs dream more frequently than adult dogs.
+                    </p>
+                </article>
+            </section>
+
+            <section class="group3">
+
+                <div class="dog-human-ion"></div>
+
+                <article class="card">
+                    <h2 class="card-title">Blood pressure goes down</h2>
+                    <p class="contents">
+                        Petting dogs make human blood pressure low when they pet dogs. And
+                        so does the dog's!
+                    </p>
+                </article>
+
+                <div class="paw-icon"></div>
+
+                <article class="card">
+                    <h2 class="card-title">Dogs sweat from their paws</h2>
+                    <p class="contents">
+                        They have sweat glands on their body like as humans. But the only
+                        sweat glands on their paws help dogs cool down.
+                    </p>
+                </article>
+
+            </section>
+
+            <div class="last-message">
+                <p>LOVE MORE DOGS!!</p>
+                <div class="last-img"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="copyright">&copy;Inu Wan Wan 2022 August</p>
+        </footer>
+    </div>
+</Layout>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #body-secondary {
+        font-family: "Sriracha", cursive;
+        background-color: rgb(249, 249, 226);
+    }
+
+    p {
+        overflow: auto;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h2.card-title {
+        padding: 1em .3em;
+        line-height: 1.5em;
+        margin-bottom: .5em;
+    }
+
+    .header-container {
+        height: 350px;
+        padding: 3em;
+        margin: 0 auto 8em;
+        border-radius: 5em 0 5em 0;
+        text-align: center;
+        background-image: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/dog-header.jpg");
+        background-position: 30% 36%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.35);
+        background-blend-mode: lighten;
+    }
+
+    .header {
+        font-size: 5em;
+    }
+
+    .header-container p {
+        font-size: 2.6em;
+    }
+
+    .body-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .group1 {
+        display: flex;
+        justify-content: space-around;
+        margin: 2em 5em 2em;
+    }
+
+    .group1 .card {
+        width: 100%;
+        height: auto;
+        background-color: #ffc09f;
+        margin: 0 2em 8em;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .group1 .card-title {
+        font-size: 2em;
+        width: 100%;
+        height: 50%;
+        padding: 0.3em auto 1em;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .group1 .contents {
+        margin: 1em;
+        padding: 0.6em;
+        font-size: 1.3em;
+    }
+
+    .group1 .card-title span {
+        font-size: 2em;
+    }
+
+    .group2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin: 2em 5em 2em;
+    }
+
+    .yawn-img {
+        background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/dog-yawning.jpg");
+        background-size: cover;
+        background-position: 40% 65%;
+        background-color: rgba(255, 255, 255, 0.2);
+        background-blend-mode: lighten;
+        margin-bottom: 3.5em;
+        border-radius: 10px;
+    }
+
+    .sleep-img {
+        background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/dog-sleep.jpg");
+        background-size: cover;
+        background-position: 20% 5%;
+        background-color: rgba(255, 255, 255, 0.2);
+        background-blend-mode: lighten;
+        margin-bottom: 3.5em;
+        border-radius: 10px;
+    }
+
+    .group2 .card {
+        height: 20em;
+        border-radius: 10px;
+        margin-bottom: 3.5em;
+    }
+
+    .group2 .card-dream {
+        height: 20em;
+        border-radius: 10px;
+        margin-bottom: 3.5em;
+    }
+
+    .group2 .card-title {
+        font-size: 2em;
+        width: 100%;
+        height: 3em;
+        padding-top: 0.8em;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    .group2 .contents {
+        padding: 0 2em 0.5em 0;
+        font-size: 1.3em;
+    }
+
+    .group2 .contents-less {
+        padding: 1.5em 3em;
+        font-size: 1.3em;
+    }
+
+    .sleepy-dog-icon {
+        display: none;
+    }
+
+    .sleep-dog-icon {
+        display: none;
+    }
+
+    .group3 {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 50% 50%;
+        margin: 5em 2.5em 3em;
+    }
+
+    .paw-icon {
+        background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/paw-icon.png");
+        background-repeat: no-repeat;
+        height: 150px;
+        margin: 2.5em 1em 1em 20.5em;
+    }
+
+    .dog-human-ion {
+        background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/dog-human-icon.png");
+        background-repeat: no-repeat;
+        height: 150px;
+        margin: 2.5em 4em 1em 20em;
+    }
+
+    .group3 .card {
+        width: 75%;
+        height: auto;
+        border-radius: 10px;
+        text-align: center;
+        margin: 2em 0 1em 0;
+    }
+
+    .group3 .card-title {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .group3 .contents {
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    .group3 .card-title span {
+        font-size: 2em;
+    }
+
+    .last-message {
+        position: relative;
+    }
+
+    .last-message p {
+        font-size: 7em;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        left: 18%;
+        top: 15%;
+        padding-right: 0.5em;
+    }
+
+    .last-img {
+        background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/dogs-inline.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: 25% 70%;
+        background-color: rgba(255, 255, 255, 0.2);
+        background-blend-mode: lighten;
+        margin-top: 7em;
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 1em;
+        width: 100%;
+        font-size: 1em;
+        background-color: antiquewhite;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1400px) {
+        .header-container {
+            height: 350px;
+            background-size: 120%;
+            background-position: 45% 35%;
+        }
+
+        .group1 {
+            display: flex;
+            margin: 2em 3em 7em 3em;
+        }
+
+        .group1 .card {
+            height: auto;
+            margin: 0.5em;
+            text-align: center;
+        }
+
+        .group1 .contents {
+            margin: 0.5em auto;
+        }
+
+        .group2 .contents {
+            padding: 0.3em 2em;
+        }
+
+        .sleepy-dog-icon {
+            display: none;
+        }
+
+        .sleep-dog-icon {
+            display: none;
+        }
+
+        .group3 {
+            display: grid;
+            grid-template-columns: 35% 1fr;
+            grid-template-rows: 50% 50%;
+            margin: 10em 2.5em 3em;
+        }
+
+        .paw-icon {
+            background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/paw-icon.png");
+            background-repeat: no-repeat;
+            height: 150px;
+            margin: 3em 1em 1em 5em;
+        }
+
+        .dog-human-ion {
+            background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/dog-human-icon.png");
+            background-repeat: no-repeat;
+            height: 150px;
+            margin: 2em 3.5em 1em 5em;
+        }
+
+        .group3 .card {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+            margin: 1.5em 0 1em 0;
+        }
+
+        .group3 .contents {
+            margin-right: 2.5em;
+        }
+
+        .last-message p {
+            position: absolute;
+            left: 8%;
+            top: 20%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .header-container {
+            height: 200px;
+            background-size: 150%;
+            background-position: 45% 35%;
+            font-size: .6em;
+        }
+
+        .group1 {
+            display: flex;
+            flex-direction: column;
+            margin: 2em 3em 7em 3em;
+            font-size: .7em;
+        }
+
+        .group1 .card {
+            height: auto;
+            border: 1px solid #cacaca;
+            margin: 0 0 2em 0;
+            text-align: center;
+        }
+
+        .group2 {
+            display: grid;
+            grid-template-columns: 1fr 40%;
+            grid-template-rows: 50% 50%;
+            margin: 5em 2.5em 3em;
+            font-size: .7em;
+        }
+
+        .yawn-img {
+            display: none;
+        }
+
+        .sleep-img {
+            display: none;
+        }
+
+        .sleepy-dog-icon {
+            display: inline;
+            background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/sleepy-dog-icon.png");
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 100%;
+            margin: 2em 0 0 0;
+        }
+
+        .sleep-dog-icon {
+            display: inline;
+            background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/sleep-dog-icon.png");
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 100%;
+            margin: 2em 0 0 0;
+            order: 4;
+        }
+
+        .group2 .card {
+            height: 3em;
+            border-radius: 10px;
+        }
+
+        .group2 .card-dream {
+            border-radius: 10px;
+            margin-top: 1em;
+        }
+
+        .group2 .card-title {
+            width: 100%;
+            height: 4em;
+            padding: 1em 0.3em;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .group2 .card-title {
+            width: 100%;
+            height: 3em;
+            padding: 0.5em 0.3em;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .group2 .contents {
+            padding: 0.3em 2em;
+            font-size: 1.3em;
+        }
+
+        .group2 .contents-less {
+            padding: 0.3em 2em;
+            font-size: 1.3em;
+        }
+
+        .group3 {
+            display: grid;
+            grid-template-columns: 40% 1fr;
+            grid-template-rows: 50% 50%;
+            margin: 7em 2.5em 3em;
+            font-size: .7em;
+        }
+
+        .paw-icon {
+            background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/paw-icon.png");
+            background-repeat: no-repeat;
+            height: 130px;
+            margin: 3em 0;
+        }
+
+        .dog-human-ion {
+            background: url("https://raw.githubusercontent.com/Yuriko-Otorii/HTML-CSS-mini-project/main/images/dog-human-icon.png");
+            background-repeat: no-repeat;
+            height: 130px;
+            margin: 3em .5em;
+        }
+
+        .group3 .card {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .last-message {
+            position: relative;
+        }
+
+        .last-message p {
+            font-size: 5em;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            left: 10%;
+            top: 20%;
+        }
+    }
+</style>
