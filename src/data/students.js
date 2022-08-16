@@ -1,7 +1,7 @@
 export const students = [
     {name: 'aki', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'allan', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
-    {name: 'atsumi', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
+    {name: 'atsumi', title: "Where to: Camino de Santiago", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/022.png", status: true},
     {name: 'isaac', title: "Some Tips About breath Holding", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/023.png", status: true},
     {name: 'edumarc', title: "TheNerds.", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/015.png", status: true},
     {name: 'hikari', title: "How to enjoy Starbucks in your place", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/039.png", status: true},

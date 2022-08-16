@@ -1,0 +1,447 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="Atsumi - Infographic Mini Project" bgcolor="bg-white">
+    <div id="body-secondary">
+        <header>
+            <h1>Where to:<p class="de"> Camino
+                <p class="de">de</p>
+                <p class="de">Santiago!</p>
+                </p>
+            </h1>
+        </header>
+        <div class="camino_1"></div>
+
+
+
+        <main class="main_container">
+            <div class="first_article">
+                <article class="intro">
+                    <h2>What is the Camino de santiago?</h2>
+                    <p class="what_is">
+                        The <span class="bold_camino">Camino de Santiago</span> (the Way of St. James) is a large
+                        network of
+                        ancient pilgrim routes stretching across Europe and coming together
+                        at the tomb of St. James (Santiago in Spanish) in Santiago de
+                        Compostela in north-west Spain. <br>
+                        <br> Yearly, hundreds of thousands of people of various backgrounds walk the Camino de Santiago
+                        either on
+                        their own or in organized groups. <br>
+                        <br>Today, more than a pilgrimage, the
+                        Camino de Santiago is a unique experience and trip of a lifetime,
+                        with its routes attracting thousands of people from all over the
+                        world.
+                    </p>
+                </article>
+                <div class="cathedral_1">
+                    <img class="camino_sky" src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/camino03.jpg" alt="cathedral of Santiago" />
+                    <span><img
+                            src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/caminoRoad01.jpg"
+                            alt="on the way to Camino de Santiago"></span>
+
+                    <!-- <div class="rsample2">
+                <img src="下になる画像のURL" />
+                <span><img src="上に重ねる画像のURL" /></span> -->
+                </div>
+            </div>
+
+            <section class="route">
+                <h3>Camino de Santiago Route Map</h3>
+                <p class="about_route">
+                    The best thing about the Camino is that anybody can do it, you don’t have to be an experienced hiker
+                    or
+                    super athlete to walk it. <br>
+                    <br>
+                    Camino de Santiago has many different route options from a short 120 km
+                    walk to the long and challenging <br> 800 km and even 1000 km routes
+                    depending on how much time you have, <br> what you want to see, and how
+                    far you can walk you can choose any of the existing routes.
+                </p>
+
+                <div class="route_map_1">
+                    <img class="route_map"
+                        src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/camino_routemap.png" alt="Route map for Camino de Santiago" />
+                </div>
+            </section>
+
+            <section class="detailes">
+                <div class="info">
+                    <h4>Length: <p class="info_answer">500km</p>
+                    </h4>
+                    <img src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/road.png"
+                        alt="road" />
+                    <p class="description">The commonly agreed-upon route for El Camino de Santiago begins at Saint Jean
+                        Pied de
+                        Port, France, and travels 500 miles through four of Spain's 15 regions.</p>
+                </div>
+
+                <div class="info">
+                    <h4>Average Time: <br>
+                        <p class="info_answer">35 Days</p>
+                    </h4>
+                    <img src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/clock02.png"
+                        alt="clock">
+                    <p class="description">The minimum pilgrimage you must undertake in order to achieve your Composted
+                        (pilgrim's certificate) is 100km.</p>
+                </div>
+
+                <div class="info">
+                    <h4>Most popular Month: <br>
+                        <p class="info_answer">July & August</p>
+                    </h4>
+                    <img src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/telescope.png"
+                        alt="telescope" />
+                    <p class="description">July and August are the most popular months, though they can be unpleasantly
+                        hot,
+                        with scorched vegetation. </p>
+                </div>
+            </section>
+
+            <section class="accommodation_options">
+                <img src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/caminoRoad02.jpg" alt="people in the camino road">
+                <img src="https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/camino02.jpg" alt="at the cathedral">
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="copyright"><small>it was fun &copy; All Right Reserved</small></div>
+        </footer>
+
+    </div>
+</Layout>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #body-secondary {
+        background-color: #fff;
+        min-width: 1200px;
+        /* background-image: url(camino.jpg); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px; */
+    }
+
+    img {
+        width: 100%;
+    }
+
+    header {
+        position: absolute;
+        width: 30%;
+    }
+
+    .de {
+        color: #001D3D;
+    }
+
+    .main_container {
+        width: 70%;
+        margin: auto;
+    }
+
+    h1 {
+        color: #FCA311;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: bolder;
+        padding: 10px 0 10px 15px;
+        display: inline-block;
+        background-color: #FDF8E1;
+        width: 100%;
+    }
+
+    .camino_1 {
+        width: 100%;
+        height: 400px;
+        background: url("https://raw.githubusercontent.com/itsubonew/mini-project-Infographics/main/camino.jpg") no-repeat center center/cover;
+    }
+
+
+    h2 {
+        display: inline-block;
+        color: #001D3D;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 35px;
+        text-align: right;
+        padding: 125px 0 10px 0;
+        border-bottom: 5px dashed #FCA311;
+    }
+
+    h3 {
+        color: #001D3D;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 35px;
+        border-bottom: 5px dashed #FCA311;
+        padding: 10px 20px 10px 20px;
+    }
+
+    h4 {
+        font-size: 35px;
+        background-color: antiquewhite;
+        /* border-radius: 10%; */
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+    .what_is {
+        color: #001D3D;
+        font-family: 'Barlow', sans-serif;
+        text-align: left;
+        /* display: flex; */
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 30px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .cathedral_1 {
+        width: 1200px;
+        height: 650px;
+        padding-top: 50px;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    .cathedral_1 span {
+        position: absolute;
+        top: 300px;
+        left: 190px;
+    }
+
+    .cathedral_1 img {
+        width: 400px;
+        border-radius: 0.375rem;
+        box-shadow: 0 0 2rem -0.8rem;
+    }
+
+    .route {
+        background-color: #FDF8E1;
+        margin-bottom: 40px;
+        border: 2px inset #f9f1cd;
+        /* border-radius: 5%; */
+    }
+
+    .about_route {
+        color: #001D3D;
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        padding: 20px 20px 0 20px;
+        line-height: 30px;
+
+    }
+
+    .route_map_1 {
+        padding: 40px 0 30px 0;
+        text-align: center;
+    }
+
+    .route_map {
+        background-color: #fff;
+        width: 70%;
+        border-radius: 6%;
+        background-color: #98bde4;
+
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .detailes {
+        display: flex;
+        color: #001D3D;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .detailes img {
+        width: 20%;
+    }
+
+    .first_article {
+        display: flex;
+
+    }
+
+    .description {
+        font-size: 16px;
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+        padding: 10px 20px 20px 20px;
+        line-height: 30px;
+    }
+
+    .info {
+        background-color: antiquewhite;
+        background-color: rgba(255, 255, 255, 1);
+        width: 30%;
+        margin-top: 60px;
+        margin-left: 30px;
+        text-align: center;
+        box-shadow: 0 0 2rem -0.8rem;
+
+    }
+
+    .info img {
+        width: 30%;
+        background-color: #fff;
+        border-radius: 20%;
+        margin-top: 10px;
+    }
+
+    .info_answer {
+        font-family: 'Permanent Marker', cursive;
+        padding-bottom: 10px;
+    }
+
+    .caminoRoad_pink {
+        width: 50%;
+        /* margin: 120px 40px 60px 350px; */
+    }
+
+    .accommodation_options {
+        /* position: relative */
+        margin-top: 120px;
+        display: flex;
+    }
+
+    /* .accommodation_options span {
+        position: absolute;
+        width: 50%;
+        top: 570px;
+        left: 200px;
+        padding-bottom: 30px;
+    } */
+
+    .accommodation_options img {
+        width: 50%;
+        height: 495px;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .copyright {
+        background-color: #FDF8E1;
+        text-align: center;
+        margin-top: 100px;
+        padding: 20px 0;
+    }
+
+
+    /* .cathedral_1{
+    width: 1200px;
+    height: 650px;
+    padding-top: 50px ;
+    padding-left: 30px;
+    position: relative;
+}
+
+.cathedral_1 span{
+    position:absolute;
+    top: 300px;
+    left: 190px;
+}
+
+.cathedral_1 img{
+    width: 400px;
+    border-radius: 0.375rem;
+    box-shadow: 0 0 2rem -0.8rem;
+} */
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            display: none;
+        }
+
+        .camino_1 {
+            width: 100vw;
+        }
+
+        .main_container {
+            width: 80%;
+            text-align: center;
+            padding: 0;
+            padding-left: 15px;
+            margin: 0;
+
+        }
+
+        h2 {
+            width: 100%;
+            padding: 0;
+            padding-left: 40px;
+            text-align: center;
+            /* padding: 5px; */
+        }
+
+        .what_is {
+            text-align: center;
+        }
+
+        h3 {
+            width: 90vw;
+        }
+
+        article {
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .route {
+            width: 90vw;
+            height: 100%;
+
+        }
+
+        .route section {
+            height: 100%;
+            width: 50%;
+        }
+
+        .route_map_1 {
+            width: 90%;
+            padding-bottom: 10px;
+            text-align: center;
+            margin-left: 30px;
+        }
+
+        .detailes {
+            display: block;
+            margin-left: 70px;
+        }
+
+        .caminoRoad_pink {
+            position: relative;
+            width: 100vw;
+            margin-left: -240px;
+            text-align: left;
+
+        }
+
+        .accommodation_options span {
+            text-align: center;
+            width: 77vw;
+        }
+
+        footer {
+            width: 100vw;
+        }
+    }
+</style>
