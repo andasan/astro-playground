@@ -1,0 +1,270 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="Mateus - Infographic Mini Project" bgcolor="bg-black">
+
+        <div id="header">
+            <h1 id="title">Which color are you in Magic the Gathering?</h1>
+            <h3>
+                Magic the gathering is a fantasy card game invented in 1993 by Richard Garfield, where you invoke
+                monsters and allies
+                to help you win a battle. The main resource in the game is called MANA and it comes in five different
+                colors, each one with
+                its own philosophy and characteristics. It is possible to define anyone within a unique color
+                combination, even for
+                those who have never played the game. <br><br>Let's find out yours!
+            </h3>
+        </div>
+        <div class="container">
+            <div id="boxBlue" class="card">
+                <h1 id="colorName"> Blue</h1>
+                <ol>
+                    <li>Curiosity</li>
+                    <li>Knowledge</li>
+                    <li>Deceit</li>
+                    <li>Caution</li>
+                    <li>Deliberation</li>
+                    <li>Perfection</li>
+                    <li>Islands</li>
+                </ol><br><img id="symbol" src="https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/blue.png"
+                    alt="">
+            </div>
+            <div id="boxGreen" class="card">
+                <h1 id="colorName">Green</h1>
+                <ol>
+                    <li>Nature</li>
+                    <li>Instinct</li>
+                    <li>Wildlife</li>
+                    <li>Connection</li>
+                    <li>Spirituality</li>
+                    <li>Tradition</li>
+                    <li>Forests</li>
+                </ol><br><img id="symbol" src="https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/green.png"
+                    alt="">
+            </div>
+            <div id="boxRed" class="card">
+                <h1 id="colorName">Red</h1>
+                <ol>
+                    <li>Freedom</li>
+                    <li>Action</li>
+                    <li>Impulse</li>
+                    <li>Destruction</li>
+                    <li>Emotion</li>
+                    <li>Damage</li>
+                    <li>Mountains</li>
+                </ol><br><img id="symbol" src="https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/red.png"
+                    alt="">
+            </div>
+            <div id="boxBlack" class="card">
+                <h1 id="colorName">Black</h1>
+                <ol>
+                    <li>Power</li>
+                    <li>Self-interest</li>
+                    <li>Death</li>
+                    <li>Sacrifice</li>
+                    <li>Darkness</li>
+                    <li>Amorality</li>
+                    <li>Swamps</li>
+                </ol><br><img id="symbol" src="https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/black.png"
+                    alt="">
+            </div>
+            <div id="boxWhite" class="card">
+                <h1 id="colorName">White</h1>
+                <ol>
+                    <li>Peace</li>
+                    <li>Organization</li>
+                    <li>Law</li>
+                    <li>Selflessness</li>
+                    <li>Equality</li>
+                    <li>Structure</li>
+                    <li>Plains</li>
+                </ol><br><img id="symbol" src="https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/white.png"
+                    alt="">
+            </div>
+        </div>
+</Layout>
+
+<style>
+   
+
+    p {
+        color: white;
+        text-align: center;
+    }
+
+    #symbol {
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    ol {
+        color: white;
+        font-size: 18px;
+
+    }
+
+    #header {
+        background-image: url("https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/img1.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-color: rgb(191, 191, 191);
+        background-size: 38%;
+        min-height: 400px;
+        font-family: 'Poppins';
+    }
+
+
+    h3 {
+        max-width: 80%;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 12%;
+    }
+
+    #title {
+        margin: 0px auto;
+        padding: 15px;
+        color: black;
+        text-align: center;
+        font-family: 'Poppins';
+    }
+
+    #colorName {
+        text-align: center;
+        margin: 0px auto;
+        padding-bottom: 10px;
+        color: white;
+
+    }
+
+    .container {
+        /* height: 500px; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 20%;
+        height: 100%;
+        padding: 20px;
+        /* display: inline-block; */
+        float: left;
+        font-family: 'Poppins';
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* margin: 0 0 0 0; */
+    }
+
+    #boxBlue {
+        background-image: url("https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/island.jpg");
+    }
+
+    #boxGreen {
+        background-image: linear-gradient(to bottom right, #63d471, #005f23);
+        background-image: url("https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/forest.jpg");
+    }
+
+    #boxRed {
+        background-image: linear-gradient(to bottom right, #f73a29, #9a0a0a);
+        background-image: url("https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/mountain.jpg");
+    }
+
+    #boxBlack {
+        background-image: linear-gradient(to bottom right, #b589d6, #7333b3);
+        background-image: url("https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/swamp.jpg");
+    }
+
+    #boxWhite {
+        background-image: linear-gradient(to bottom right, #fafaee, #b99c87);
+        background-image: url("https://raw.githubusercontent.com/Mawtias/WebDev/main/imgs/plains.jpg");
+    }
+
+    @media (max-width: 1023px) {
+        ul {
+            font-size: x-large;
+        }
+
+        #boxBlue {
+            width: 100%;
+            max-width: 100%;
+            margin: 0px;
+        }
+
+        #boxGreen {
+            width: 100%;
+            max-width: 100%;
+            margin: 0px;
+
+        }
+
+        #boxRed {
+            width: 100%;
+            max-width: 100%;
+            margin: 0px;
+        }
+
+        #boxBlack {
+            width: 100%;
+            max-width: 100%;
+            margin: 0px;
+        }
+
+        #boxWhite {
+            width: 100%;
+            max-width: 100%;
+            margin: 0px;
+        }
+
+        #header {
+            background-size: 40%;
+        }
+
+        #symbol {
+            width: 100px;
+            height: 100px;
+        }
+
+        ol {
+            text-align: center;
+            list-style-position: inside;
+            padding-inline-start: 0px;
+            font-size: x-large;
+        }
+    }
+
+    @media (max-width: 426px) {
+        #header {
+            text-align: center;
+            background-position: bottom;
+            padding-bottom: 35%;
+            background-size: 50%;
+        }
+
+        h3 {
+            max-width: fit-content;
+            padding: 0px;
+            margin: 15px;
+        }
+
+        #symbol {
+            width: 70px;
+            height: 70px;
+            margin-top: 30px;
+        }
+
+        ol {
+            text-align: center;
+            list-style-position: inside;
+            padding-inline-start: 0px;
+            font-size: x-large;
+        }
+
+    }
+</style>

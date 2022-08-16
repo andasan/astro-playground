@@ -17,10 +17,10 @@ const { name, title, image, status } = Astro.props as Props;
 			</div>
 			<div class="text-center">
 				<h4 class="text-white mb-2 capitalize">
-					{name}
-				</h4>
-				<p class="font-medium text-sm text-dark mb-5">
 					{title}
+				</h4>
+				<p class="font-medium text-sm text-dark mb-5 capitalize">
+					{name}
 				</p>
 			</div>
 		</a>
@@ -30,7 +30,6 @@ const { name, title, image, status } = Astro.props as Props;
 <style>
 	h4 {
 		font-size: 20px;
-		/* font-size: 2rem; */
 	}
 
 	@media (max-width: 500px) {
