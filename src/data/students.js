@@ -8,7 +8,7 @@ export const students = [
     {name: 'hinata', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'jeffery', title: "Major Types Of Red Wine", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/011.png", status: true},
     {name: 'ikko', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
-    {name: 'iyo', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
+    {name: 'iyo', title: "My brain now", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5c345ad3040ab12ebe4c1e28/iPhone/017.png", status: true},
     {name: 'jc', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'juan', title: "The greatest man on earth, Hidetaka Miyazaki", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/004.png", status: true},
     {name: 'jumpei', title: "Youkai", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5ba47598040ab16e95045b09/iPhone/009.png", status: true},

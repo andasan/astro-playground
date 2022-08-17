@@ -1,0 +1,542 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="Iyo - Infographic Mini Project" bgcolor="bg-white">
+    <div id="body-secondary">
+        <main>
+            <nav id="navbar">
+                <h1 class="logo">My brain now</h1>
+            </nav>
+            <div id="showcase">
+                <div class="container">
+                    <div class="showcase-content">
+                        <h1><span class="text-primary"></span> My brain now</h1>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Dolor,eligendi
+                            laboriosam. Repellendus officia harum eaque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pie-chart" class="content">
+                <h2 class="c-title">Percentage</h2>
+                <div class="pie-chart-wrap">
+                    <div class="box blue">
+                        <div class="percent">
+                            <svg>
+                                <circle class="base" cx="75" cy="75" r="70"></circle>
+                                <circle class="line" cx="75" cy="75" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3 class="title">51<span>%</span></h3>
+                            </div>
+                            <p class="text">CSS is harder than I thought</p>
+                        </div>
+                    </div>
+                    <div class="box red">
+                        <div class="percent">
+                            <svg>
+                                <circle class="base" cx="75" cy="75" r="70"></circle>
+                                <circle class="line" cx="75" cy="75" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3 class="title">33<span>%</span></h3>
+                            </div>
+                            <p class="text">I'm hungry</p>
+                        </div>
+                    </div>
+                    <div class="box green">
+                        <div class="percent">
+                            <svg>
+                                <circle class="base" cx="75" cy="75" r="70"></circle>
+                                <circle class="line" cx="75" cy="75" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3 class="title">16<span>%</span></h3>
+                            </div>
+                            <p class="text">I want to pet cats</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="comment" div id="chart"> -->
+            <h2 class="b-title">Comment</h2>
+            <div id="comment" class="chart">
+                <div class="box10">
+                    <div class="box-title">CSS
+                    </div>
+                    <div class="img1">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Quasi mollitia et dignissimos fugit
+                            natus quidem aperiam quo rem sapiente atque a, vitae quibusdam voluptatibus, illo labore
+                            nostrum quis maiores ipsa!Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem
+                            ipsum dolor sit amet consectetur, adipisicing elit. Voluptates enim nisi non doloremque
+                            commodi placeat molestiae illo aspernatur perferendis nulla rem similique exercitationem
+                            architecto corporis, ut inventore ab eius fuga!</p>
+                    </div>
+                </div>
+                <div class="box20">
+                    <div class="box-title">Food
+                    </div>
+                    <div class="img2">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit.Quasi mollitia et dignissimos fugit natus quidem aperiam quo
+                            rem sapiente atque a, vitae quibusdam voluptatibus, illo labore nostrum quis maiores
+                            ipsa!Lorem ipsum dolor sit amet consectetur, adipisicing elit.Quasi mollitia et dignissimos
+                            fugit natus quidem aperiam quo rem sapiente atque a, vitae quibusdam voluptatibus, illo
+                            labore nostrum quis maiores ipsa!</p>
+                    </div>
+                </div>
+                <div class="box30">
+                    <div class="box-title">Cats
+                    </div>
+                    <div class="img3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Quasi mollitia et dignissimos fugit
+                            natus quidem aperiam quo rem sapiente atque a, vitae quibusdam voluptatibus, illo labore
+                            nostrum quis maiores ipsa!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
+                            ipsum dolor sit amet consectetur, adipisicing elit.Exercitationem consequatur fugit quis
+                            earum accusantium beatae rerum illum porro itaque sint id est eos nobis molestias,
+                            reiciendis, quod aperiam corporis voluptatum!</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="video">Learn more CSS</h2>
+            <div class="youtube">
+                <iframe class="youtube1" width="560" height="315" src="https://www.youtube.com/embed/1PnVor36_40"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe class="youtube2" width="560" height="315" src="https://www.youtube.com/embed/g6bn6XrhYdc"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </main>
+        <footer id="main-footer">
+            <p>IYO &copy; 2022, I'll have sushi today</p>
+        </footer>
+    </div>
+</Layout>
+
+<style>
+    /* Navbar */
+    #navbar {
+        background: #333;
+        color: #fff;
+        overflow: auto;
+        text-align: ;
+        width: 100%;
+        box-sizing: border-box;
+        height: 5%;
+    }
+
+    #navbar .logo {
+        float: none;
+        margin: 1%;
+        padding: -3%;
+        font-size: 3vw;
+    }
+
+
+    @media screen and (min-width: 751px) {
+        #navbar {}
+    }
+
+    @media screen and (max-width: 750px) {
+        #navbar {}
+
+        #navbar .logo {
+            /* margin: -8px; */
+        }
+    }
+
+    .c-title {
+        font-size: 3rem;
+    }
+
+
+    /* Showcase */
+
+    #showcase {
+        background: url('https://raw.githubusercontent.com/IyoTodaka/A0522/main/HTML/MiniProject/img/image.jpg') no-repeat center center/cover;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: inset 0 0 10px 15px #FFF;
+    }
+
+    #showcase .showcase-content {
+        color: #fff;
+        text-align: center;
+        margin: 0%;
+        left: 50%;
+        top: 50%;
+        transform: translate(0%, 90%);
+    }
+
+    #showcase .showcase-content h1 {
+        font-size: 3vw;
+        line-height: 1.2em;
+        margin: 0%;
+    }
+
+    #showcase .showcase-content p {
+        font-size: 1vw;
+        line-height: 1.7em;
+        margin: 0%;
+    }
+
+
+    @media screen and (min-width: 751px) {
+        #showcase {
+            height: 50vh;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        #showcase {
+            height: 30vh;
+        }
+    }
+
+    /* pie chart */
+    @media screen and (min-width: 751px) {
+        #pie-chart {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .c-title {
+            background: #fff;
+            height: 100px;
+        }
+
+        .pie-chart-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+    }
+
+    .box {
+        position: relative;
+        min-width: 200px;
+        width: 33.3333333333%;
+        height: 300px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: #fff;
+        -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 750px) {
+        .box {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 751px) {
+        .box+.box {
+            margin-left: 40px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .box+.box {
+            margin-top: 20px;
+        }
+    }
+
+    .box .percent {
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+
+    .box .percent svg {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .box .percent svg circle {
+        position: relative;
+        fill: none;
+        stroke-width: 10;
+        stroke: #f3f3f3;
+        stroke-dasharray: 440;
+        stroke-dashoffset: 0;
+        stroke-linecap: round;
+    }
+
+    .box .percent .number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #111;
+    }
+
+    .box .percent .number .title {
+        font-size: 50px;
+    }
+
+    .box .percent .number .title span {
+        font-size: 22px;
+    }
+
+    .box .text {
+        padding: 10px 0 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .box .percent .line {
+        -webkit-animation: circleAnim 1s forwards;
+        animation: circleAnim 1s forwards;
+    }
+
+    .box.blue .percent .line {
+        stroke-dashoffset: 220.8;
+        stroke: #03a9f4;
+    }
+
+    .box.red .percent .line {
+        stroke-dashoffset: 290;
+        stroke: #ff3051;
+    }
+
+    .box.green .percent .line {
+        stroke-dashoffset: 370.0;
+        stroke: #1fd26c;
+    }
+
+
+    /* Footer */
+    #main-footer {
+        text-align: center;
+        background: #444;
+        color: #fff;
+        padding: 20px;
+    }
+
+    @-webkit-keyframes circleAnim {
+        0% {
+            stroke-dasharray: 0 440;
+        }
+
+        99.9%,
+        to {
+            stroke-dasharray: 440 440;
+        }
+    }
+
+    @keyframes circleAnim {
+        0% {
+            stroke-dasharray: 0 440;
+        }
+
+        99.9%,
+        to {
+            stroke-dasharray: 440 440;
+        }
+    }
+
+    /* text */
+    .box10 {
+        display: flex;
+        margin: 2em 0.8em;
+        background: #f1f1f1;
+        box-shadow: 2px 4px rgba(0, 0, 0, 0.22);
+        overflow: hidden;
+
+    }
+
+    .box10 .box-title {
+        font-size: 1.2em;
+        background: #03a9f4;
+        padding: 4px;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+
+    }
+
+    .box10 p {
+        padding: 15px 20px;
+        margin: 10;
+        font-size: 1.2em;
+        color: #262d29;
+        font-weight: 500;
+        background: rgba(251, 251, 251, 0.475);
+    }
+
+    .box10 .img1 {
+        background: url('https://raw.githubusercontent.com/IyoTodaka/A0522/main/HTML/MiniProject/img/image1.jpg') no-repeat center center/cover;
+
+    }
+
+    .box20 {
+        display: flex;
+        margin: 2em 0.8em;
+        background: #f1f1f1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+        overflow: hidden;
+    }
+
+    .box20 .box-title {
+        font-size: 1.2em;
+        background: #ff3051;
+        padding: 4px;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+    .box20 p {
+        padding: 15px 20px;
+        margin: 10;
+        font-size: 1.2em;
+        color: #262d29;
+        font-weight: 500;
+        background: rgba(251, 251, 251, 0.475);
+    }
+
+    .box20 .img2 {
+        background: url('https://raw.githubusercontent.com/IyoTodaka/A0522/main/HTML/MiniProject/img/image3.jpg') no-repeat center center/cover;
+
+    }
+
+    .box30 {
+        display: flex;
+        margin: 2em 0.8em;
+        background: #f1f1f1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+        overflow: hidden;
+    }
+
+    .box30 .box-title {
+        font-size: 1.2em;
+        background: #1fd26c;
+        padding: 4px;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+    .box30 p {
+        padding: 15px 20px;
+        margin: 10;
+        font-size: 1.2em;
+        color: #262d29;
+        font-weight: 500;
+        background: rgba(251, 251, 251, 0.475);
+    }
+
+    .box30 .img3 {
+        background: url('https://raw.githubusercontent.com/IyoTodaka/A0522/main/HTML/MiniProject/img/image4.jpg') no-repeat center center/cover;
+
+    }
+
+    @media screen and (min-width: 751px) {
+
+        .b-title {
+            width: 80%;
+            margin-top: 20px;
+            margin-left: 10%;
+            background: #fff;
+            height: 50px;
+            font-size: 3vw;
+        }
+
+        .chart {
+            position: relative;
+            width: 100%;
+            width: 27%;
+            height: 500px;
+            display: -webkit-box;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            margin-left: 10%;
+
+        }
+
+        .box10+.box20 {
+            margin-left: 20px;
+        }
+
+        .box20+.box30 {
+            margin-left: 20px;
+        }
+
+        .youtube {
+            /* width: 80%;
+            margin-left: 11%; */
+            padding: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .youtube iframe {
+            margin-bottom: 1rem;
+        }
+
+        .video {
+            width: 80%;
+            margin-left: 10%;
+            background: #fff;
+            height: 30px;
+            font-size: 3vw;
+        }
+
+    }
+</style>
