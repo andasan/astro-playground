@@ -21,7 +21,7 @@ export const students = [
     {name: 'ryo', title: "Tips for Better Sleep", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/019.png", status: true},
     {name: 'ryousuke', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
     {name: 'samuel', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
-    {name: 'tadeu', title: "", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b31c975031a671b9c23d55d/iPhone/024.png", status: false},
+    {name: 'tadeu', title: "The World Around the Coffee!", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5c345ad3040ab12ebe4c1e28/iPhone/026.png", status: true},
     {name: 'yuriko', title: "Dogs trivia", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5b9b4832040ab1dec8e1b8a0/iPhone/006.png", status: true},
     {name: 'yuya', title: "Liverpool Football Club", image: "https://stickershop.line-scdn.net/sticonshop/v1/sticon/5ba47598040ab16e95045b09/iPhone/030.png", status: true}
 ]
