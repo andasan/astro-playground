@@ -2,17 +2,16 @@
 import Layout from "../../../layouts/Layout.astro";
 ---
 
-<Layout title="Raizo - Infographic Mini Project" bgcolor="bg-[#909090]">
+<Layout title="Raizo - Infographic Mini Project" >
+    <div id="body-secondary">
     <header>
         <div class="container">
             <h1 id="header-logo">Protein</h1>
         </div>
 
-        <div class="showcase">
+        <div class="showcase">            
             <h1>What's <span>PROTEIN?</span></h1>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam ipsa at molestiae.
-                Debitis voluptate ullam impedit laboriosam tempora tenetur dolore velit doloribus ad! Minima molestiae
-                dignissimos praesentium sit officia?</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam ipsa at molestiae. Debitis voluptate ullam impedit laboriosam tempora tenetur dolore velit doloribus ad! Minima molestiae dignissimos praesentium sit officia?</p>
         </div>
     </header>
 
@@ -65,7 +64,7 @@ import Layout from "../../../layouts/Layout.astro";
         </div>
     </section>
 
-    <section class="Howmuch">
+    <!-- <section class="Howmuch">
 
     </section>
 
@@ -77,188 +76,191 @@ import Layout from "../../../layouts/Layout.astro";
         <div id="meat">
             <img src="" alt="">
             <p></p>
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
 
     <footer>
         <p>Protein &copy; 2022, All RIghts Reserved</p>
     </footer>
+</div>
 </Layout>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+/* Reset */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
 
-    /* Main Styling */
-    html,
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.7em;
-    }
+  /* Main Styling */
+#body-secondary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+  }
 
-    /* Header */
-    .container {
-        background-color: rgb(190, 183, 185);
-    }
+/* Header */
+.container {
+  background-color: rgb(190, 183, 185);
+}
 
-    #header-logo {
-        text-align: center;
-        padding: 20px;
-        font-family: 'DynaPuff', cursive, sans-serif;
-        color: rgb(255, 255, 255);
-    }
+#header-logo {
+  text-align: center;
+  padding: 20px;
+  font-family: 'DynaPuff', cursive, sans-serif;
+  color: rgb(255, 255, 255);
+}
 
-    .showcase {
-        padding: 40px 80px;
-        background: url(../https://raw.githubusercontent.com/Raizo-n/Infographic/main/image/pexels-anush-gorak-1229356.jpg) no-repeat center center/cover;
-        height: 100%;
+.showcase {
+  padding: 40px 80px;
+  background: url(https://raw.githubusercontent.com/Raizo-n/Infographic/main/image/pexels-anush-gorak-1229356.jpg) no-repeat center center/cover;
+  height: 100%;
 
-    }
+}
 
-    .showcase h1 {
-        padding: 20px;
-        color: white;
-        font-family: 'DynaPuff', cursive, sans-serif;
-    }
+.showcase h1 {
+  padding: 20px;
+  color: white;
+  font-family: 'DynaPuff', cursive, sans-serif;
+}
 
-    .showcase p {
-        padding: 10px;
-        color: antiquewhite;
-    }
+.showcase p {
+  padding: 10px;
+  color: antiquewhite;
+}
+
+.benefits {
+  background-color: beige;
+}
+
+/* max-width: 700px */
+@media only screen and (max-width: 700px) {
+
+  /* Benefit */
 
 
-    /* max-width: 700px */
-    @media only screen and (max-width: 700px) {
+  .benefits h1 {
+    text-align: center;
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #fff100;
+    font-family: 'DynaPuff', cursive, sans-serif;
+  }
 
-        /* Benefit */
-        .benefits h1 {
-            text-align: center;
-            white-space: nowrap;
-            padding: 10px 20px;
-            font-size: 20px;
-            margin: 20px 10px;
-            background-color: #fff100;
-            font-family: 'DynaPuff', cursive, sans-serif;
-        }
+  #top8 {
+    color: red;
+  }
 
-        #top8 {
-            color: red;
-        }
+  .top-box, .bottom-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
 
-        .top-box,
-        .bottom-box {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 60px;
-            flex-wrap: wrap;
-        }
+  .benefit-item {
+    position: relative;
+    width: 45%;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
 
-        .benefit-item {
-            position: relative;
-            width: 45%;
-            text-align: center;
-            margin: 10px;
-            box-sizing: border-box;
-        }
+  .benefit-item img {
+    width: 90%;
+    border-radius: 35%;
+  }
 
-        .benefit-item img {
-            width: 90%;
-            border-radius: 35%;
-        }
+  .benefit-item span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(255, 25, 0);
 
-        .benefit-item span {
-            position: absolute;
-            top: 0%;
-            left: -30%;
-            font-weight: bold;
-            font-size: 2rem;
-            color: rgb(255, 25, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: solid 3px skyblue;
+  }
 
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 40px;
-            border: solid 3px skyblue;
-        }
+  .benefit-item p {
+    margin: 10px auto;
+    text-align: center;
+  }
+}
 
-        .benefit-item p {
-            margin: 10px auto;
-            text-align: center;
-        }
-    }
+/* min-width: 701px - max-width: 1200px */
+@media screen and (min-width: 701px) {
 
-    /* min-width: 701px - max-width: 1200px */
-    @media screen and (min-width: 701px) {
+  /* Benefit */
+  .benefits {
+    padding: 30px 100px;
+  }
 
-        /* Benefit */
-        .benefits {
-            padding: 0 100px;
-        }
+  .benefits h1 {
+    text-align: center;
+    padding: 20px 40px;
+    background-color: #fff100;
+    font-family: 'DynaPuff', cursive, sans-serif;
+  }
 
-        .benefits h1 {
-            text-align: center;
-            padding: 20px 40px;
-            margin: 50px 150px 40px;
-            background-color: #fff100;
-            font-family: 'DynaPuff', cursive, sans-serif;
-        }
+  #top8 {
+    color: red;
+  }
 
-        #top8 {
-            color: red;
-        }
+  .top-box, .bottom-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 60px 0 20px;
+  }
 
-        .top-box,
-        .bottom-box {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 60px 0 20px;
-        }
+  .benefit-item {
+    position: relative;
+    width: 45%;
+    text-align: center;
+    margin: 10px;
+  }
 
-        .benefit-item {
-            position: relative;
-            width: 45%;
-            text-align: center;
-            margin: 10px;
-        }
+  .benefit-item img {
+    width: 90%;
+    border-radius: 35%;
+    display: inline-block;
+  }
 
-        .benefit-item img {
-            width: 90%;
-            border-radius: 35%;
-            display: inline-block;
-        }
+  .benefit-item span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(255, 25, 0);
 
-        .benefit-item span {
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            font-weight: bold;
-            font-size: 2rem;
-            color: rgb(255, 25, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    text-align: center;
+    line-height: 40px;
+    border: solid 3px skyblue;
+  }
 
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            /* background-color: aqua; */
-            text-align: center;
-            line-height: 40px;
-            border: solid 3px skyblue;
-        }
+  .benefit-item p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
 
-        .benefit-item p {
-            margin: 10px 0;
-            text-align: center;
-            font-size: 1.2rem;
-        }
-    }
-
-    /* Footer */
-    footer {
-        background: rgb(190, 183, 185);
-        text-align: center;
-        padding: 20px;
-    }
+/* Footer */
+footer {
+  background: rgb(190, 183, 185);
+  text-align: center;
+  padding: 20px; 
+}
 </style>
